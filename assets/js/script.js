@@ -1,6 +1,10 @@
-function setRealVh() {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
-  setRealVh();
-  window.addEventListener('resize', setRealVh);
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+    navLinks.style.opacity = "1";
+    navLinks.style.pointerEvents = "auto"
+}
+function hideMenu(){
+    navLinks.style.opacity = "0";
+    navLinks.style.pointerEvents = "none"
+}
